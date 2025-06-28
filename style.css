@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+header {
+  background: #000;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f0c040;
+  font-weight: bold;
+}
+
+.home {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.barber-img {
+  width: 300px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.contact a {
+  color: #0ff;
+  text-decoration: none;
+}
+
+footer {
+  background: #000;
+  padding: 20px;
+  text-align: center;
+  color: #888;
+  margin-top: 40px;
+}
+
+.gallery, .colors {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cards, .color-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card, .color-item {
+  background: #222;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover, .color-item:hover {
+  transform: scale(1.05);
+}
+
+.card img, .color-item img {
+  width: 180px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .barber-img {
+    width: 200px;
+  }
+
+  .card img, .color-item img {
+    width: 100%;
+  }
+
+  .cards, .color-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .color-item {
+    flex-direction: column;
+    text-align: center;
+  }
+}
